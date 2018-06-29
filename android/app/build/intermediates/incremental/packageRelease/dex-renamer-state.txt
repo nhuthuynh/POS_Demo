@@ -1,0 +1,4 @@
+#Wed Mar 21 21:17:01 AEDT 2018
+base.0=/Volumes/Data/Projects/react-native/CassiCoupon_POS_Demo/android/app/build/intermediates/transforms/dex/release/folders/1000/1f/main
+renamed.0=classes.dex
+file.0=/Volumes/Data/Projects/react-native/CassiCoupon_POS_Demo/android/app/build/intermediates/transforms/dex/release/folders/1000/1f/main/classes.dex

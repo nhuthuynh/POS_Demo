@@ -1,0 +1,35 @@
+{
+  "name": "CassiCoupon_POS_Demo",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "bundle:android": "react-native bundle --entry-file index.android.js --bundle-output ./android/app/src/main/assets/main.jsbundle --dev false --platform android --assets-dest ./android/app/src/main/res/",
+    "copy:android": "curl http://localhost:8081/index.android.bundle?platform=android -o ./android/app/src/main/assets/index.android.bundle",
+    "build:android": "npm run clear:android && npm run copy:android && npm run bundle:android && cd android && ./gradlew assembleRelease",
+    "clear:android": "rm -rf ./android/app/src/main/assets/*.* ./android/app/build/intermediates/res/merged/release/drawable-*/*.* ./android/app/src/main/res/drawable-*/*.* ./android/app/build/outputs/apk/*.apk",
+    "test": "jest"
+  },
+  "dependencies": {
+    "flow-bin": "^0.66.0",
+    "react": "16.2.0",
+    "react-native": "0.53.0",
+    "react-native-device-info": "^0.15.1",
+    "react-navigation": "^1.0.3",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-logger": "^3.0.6",
+    "redux-observable": "^0.18.0",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-jest": "22.2.2",
+    "babel-preset-react-native": "4.0.0",
+    "jest": "22.2.2",
+    "react-test-renderer": "16.2.0",
+    "styled-components": "^3.2.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Volumes/Data/Projects/react-native/CassiCoupon_POS_Demo/android/app/build/intermediates/res/merged/release/mipmap-xxxhdpi/ic_launcher.png",
+        "source": "/Volumes/Data/Projects/react-native/CassiCoupon_POS_Demo/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Volumes/Data/Projects/react-native/CassiCoupon_POS_Demo/android/app/build/intermediates/res/merged/release/mipmap-xxxhdpi/ic_welcomebg.png",
+        "source": "/Volumes/Data/Projects/react-native/CassiCoupon_POS_Demo/android/app/src/main/res/mipmap-xxxhdpi/ic_welcomebg.png"
+    }
+]
